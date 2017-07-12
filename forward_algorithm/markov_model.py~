@@ -1,0 +1,7 @@
+class Markov_model(object):
+    def __init__(self, nr_states, nr_symbols, matrix_A, matrix_B, initial_states_probabilities):
+        self.number_of_states = nr_states
+        self.number_of_symbols = nr_symbols
+        self.transfer_probabilities = matrix_A
+        self.emission_probabilities = matrix_B
+        self.initial_states_probabilities = initial_states_probabilities
